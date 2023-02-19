@@ -17,7 +17,7 @@ networkx>=2.1
 
 ## Usage
 ### Download all files.
-git clone https://github.com/PSKong/ConGNN.git
+git clone https://github.com/CodeToPublic/Anomaly.git
 
 ### How to train 
 
