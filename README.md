@@ -1,10 +1,10 @@
-ConGNN
+ConDA
 ============
 
 
-A denoising diffusion probabilistic model-based Controlled GNN for network anomaly detection. 
+A denoising diffusion probabilistic model-based Data Augmentation method for anomaly detection. 
 
-ConGNN can generate augmented data which can keep the category information of the source sample while being close to the target sample for enhancing detection performance.
+ConDA can generate augmented data which can keep the category information of the source sample while inclining the reference sample for enhancing detection performance.
 
 
 ## Requirements
