@@ -1,10 +1,10 @@
-ConGNN
+ConDA
 ============
 
 
 A denoising diffusion probabilistic model-based Controlled GNN for network anomaly detection. 
 
-ConGNN can generate augmented data which can keep the category information of the source sample while being close to the target sample for enhancing detection performance.
+ConDA can generate augmented data which can keep the category information of the source sample while being close to the target sample for enhancing detection performance.
 
 
 ## Requirements
@@ -17,7 +17,7 @@ networkx>=2.1
 
 ## Usage
 ### Download all files.
-git clone https://github.com/PSKong/ConGNN.git
+git clone https://github.com/CodeToPublic/Anomaly.git
 
 ### How to train 
 

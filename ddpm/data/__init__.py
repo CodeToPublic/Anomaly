@@ -4,13 +4,10 @@ from re import split
 import torch.utils.data
 
 
-# 创建数据加载器 phase代表train或者val
 def create_dataloader(dataset, dataset_opt, phase):
     '''create dataloader '''
     if phase == 'train':
-        # pin_memory开启后，加载数据速度会加快
-        # 此处会自动调用dataset中的__getitem__()方法，此时dataset中的图片变成了tensor形式
-        # DataLoader迭代产生训练数据提供给模型
+
         return torch.utils.data.DataLoader(
             dataset,
             batch_size=dataset_opt['batch_size'],
@@ -28,13 +25,10 @@ def create_dataloader(dataset, dataset_opt, phase):
             'Dataloader [{:s}] is not found.'.format(phase))
 
 
-# 创建数据集 phase代表train或者val
 def create_dataset(dataset_opt, phase):
     '''create dataset'''
-    # 获得图片质量类型，HR或LR
     mode = dataset_opt['mode']
     from data.LRHR_dataset import LRHRDataset as D
-    # 通过LRHRDataset（D）构造数据集
     dataset = D(dataroot=dataset_opt['dataroot'],
                 datatype=dataset_opt['datatype'],
                 l_resolution=dataset_opt['l_resolution'],

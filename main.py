@@ -71,7 +71,7 @@ def parse_arguments(default_config="train.yaml"):
     return args
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='ConGNN')
+    parser = argparse.ArgumentParser(description='ConDA')
 #     register_data_args(parser)
     parser.add_argument("--dropout", type=float, default=0.5,
             help="dropout probability")

@@ -20,7 +20,7 @@ def get_timestamp():
 
 def parse(args, model_epoch=None):
     phase = args.phase
-    # json路径
+    # json path
     opt_path = args.config
     gpu_ids = args.gpu_ids
     enable_wandb = args.enable_wandb
